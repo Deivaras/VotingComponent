@@ -1,0 +1,2 @@
+# VotingComponent
+Created with CodeSandbox
