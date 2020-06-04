@@ -28,11 +28,20 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     marginTop: 10,
     color: theme.palette.text.secondary
+  },
+  hoverUp: {
+    backgroundColor: theme.palette.text.primary
   }
 }));
 
 function Voting({ likeCount, upVote, downVote }) {
   const classes = useStyles();
+  const hover = {
+    backgroundColor: "red"
+  };
+  const hoverUp = () => {
+    console.log("Hover...");
+  };
   return (
     <div className={classes.root}>
       <Grid container spacing={2}>
@@ -49,6 +58,7 @@ function Voting({ likeCount, upVote, downVote }) {
               aria-label="upvote"
               className={classes.icon}
               onClick={upVote}
+              onMouseEnter={hoverUp}
             >
               <ArrowDropUpOutlinedIcon />
             </IconButton>

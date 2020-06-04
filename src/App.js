@@ -7,14 +7,13 @@ export default function App() {
   const voteUp = () => {
     setLikeCount(likeCount + 1);
   };
+  const downVote = () => {
+    setLikeCount(likeCount - 1);
+  };
   return (
     <div className="App">
       <h1>My Voting</h1>
-      <Voting
-        likeCount={likeCount}
-        upVote={voteUp}
-        downVote={() => setLikeCount(likeCount - 1)}
-      />
+      <Voting likeCount={likeCount} upVote={voteUp} downVote={downVote} />
     </div>
   );
 }
