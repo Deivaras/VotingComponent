@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 import Voting from "./components/Voting";
+import Dialog from "./components/Dialog";
 
 export default function App() {
   const [likeCount, setLikeCount] = useState(2);
@@ -14,6 +15,7 @@ export default function App() {
     <div className="App">
       <h1>My Voting</h1>
       <Voting likeCount={likeCount} upVote={voteUp} downVote={downVote} />
+      <Dialog />
     </div>
   );
 }

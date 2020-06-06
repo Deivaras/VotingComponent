@@ -11,7 +11,7 @@ import ArrowDropDownOutlinedIcon from "@material-ui/icons/ArrowDropDownOutlined"
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: "lightGrey",
-    height: "100vh"
+    marginBottom: 20
   },
   icon: {
     height: 30,
